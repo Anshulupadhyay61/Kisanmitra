@@ -1,0 +1,224 @@
+#root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6faf5;
+  color: #17351d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e5eee5;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #315238;
+}
+
+.login-btn,
+.hero-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 620px;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tagline {
+  color: #2e7d32;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #2e7d32;
+}
+
+.hero-text {
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #58705c;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 15px 24px;
+}
+
+.hero-card {
+  width: 360px;
+  min-height: 300px;
+  padding: 40px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 15px 40px rgba(30, 80, 35, 0.12);
+  text-align: center;
+  font-size: 70px;
+}
+
+.hero-card h2 {
+  font-size: 24px;
+}
+
+.hero-card p {
+  font-size: 16px;
+  color: #66806b;
+}
+
+.section {
+  padding: 80px 7%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 38px;
+}
+
+.section > p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.7;
+  color: #607263;
+}
+
+.features {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(30, 80, 35, 0.08);
+}
+
+.feature-card h3 {
+  font-size: 20px;
+}
+
+.feature-card p {
+  color: #667769;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+}
+.recommendation-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.recommendation-page h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.recommendation-page > p {
+  color: #607263;
+  margin-bottom: 35px;
+}
+
+.recommendation-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.recommendation-form input {
+  padding: 15px;
+  border: 1px solid #d8e5d8;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.recommendation-form input:focus {
+  border-color: #2e7d32;
+}
+
+.recommendation-form button {
+  grid-column: 1 / -1;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .recommendation-form {
+    grid-template-columns: 1fr;
+  }
+}
